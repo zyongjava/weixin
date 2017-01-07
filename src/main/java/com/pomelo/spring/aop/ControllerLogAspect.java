@@ -23,11 +23,11 @@ import org.springframework.stereotype.Component;
 public class ControllerLogAspect {
     private Logger logger = LoggerFactory.getLogger(getClass());
 
-    @Pointcut("within(com.github.binarywang.demo.spring..*.controller..*)")
+    @Pointcut("within(com.pomelo.spring..*.controller..*)")
     public void inController() {
     }
 
-    @Pointcut("execution(public * com.github.binarywang.demo.spring..*.controller..*.*(..))")
+    @Pointcut("execution(public * com.pomelo.spring..*.controller..*.*(..))")
     public void controller() {
     }
 
