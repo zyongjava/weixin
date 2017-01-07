@@ -1,4 +1,8 @@
+# weixin config
 wx_appid=
 wx_appsecret=
 wx_token=
 wx_aeskey=
+
+# log config
+output=/Users/zhengyong/work_dev/weixin

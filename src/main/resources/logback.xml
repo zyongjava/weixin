@@ -31,11 +31,11 @@
 	<appender name="FILE"
 			  class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<!--日志文件输出的文件名 -->
-		<file>/app/logs/app.log</file>
+		<file>/output/app.log</file>
 
 		<!-- 固定数量的日志文件，防止将磁盘占满 -->
 		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-			<fileNamePattern>/app/logs/app.%i.log
+			<fileNamePattern>/${output}/app.%i.log
 			</fileNamePattern>
 			<minIndex>1</minIndex>
 			<maxIndex>3</maxIndex>
